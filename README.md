@@ -14,6 +14,7 @@ python run_mia_unified.py --output_name unified_mia --base_model_name EleutherAI
 This code borrows from [this repo](https://github.com/justusmattern27/neighbour-mia/tree/main).
 
 # Citation
+```
 @inproceedings{mattern-etal-2023-membership,
     title = "Membership Inference Attacks against Language Models via Neighbourhood Comparison",
     author = "Mattern, Justus  and
@@ -31,3 +32,4 @@ This code borrows from [this repo](https://github.com/justusmattern27/neighbour-
     pages = "11330--11343",
     
 }
+```
