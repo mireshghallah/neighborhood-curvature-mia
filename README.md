@@ -8,7 +8,7 @@ If you want to run the experiments from **the paper**  (curvature aattack, likel
 If you want to run our **curvature attack and other membership inference attacks (likelihood ratio and loss-based attack)** on **pre-trained models**, you can use code here. Run the following command to run the membership inference attack, including the baselines, on a GPT-Neo model,using Pile as member and Xsum as non-members. The code will run all experiments, and save the results and all the meta-data.
 
 ```
-python run_mia_unified.py --output_name unified_mia --base_model_name EleutherAI/gpt-neo-2.7B --mask_filling_model_name t5-3b --n_perturbation_list 25 --n_samples 2000 --pct_words_masked 0.3 --span_length 2 --cache_dir cache --dataset_member the_pile --dataset_member_key text --dataset_nonmember xsum --ref_model gpt2-xl  --baselines_only --max_length 2000
+python run_mia_unified.py --output_name unified_mia --base_model_name EleutherAI/gpt-neo-2.7B --mask_filling_model_name t5-3b --n_perturbation_list 25 --n_samples 2000 --pct_words_masked 0.3 --span_length 2 --cache_dir cache --dataset_member the_pile --dataset_member_key text --dataset_nonmember xsum --ref_model gpt2-xl  --max_length 2000
 ```
 
 This code borrows from [this repo](https://github.com/justusmattern27/neighbour-mia/tree/main).
